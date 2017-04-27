@@ -1,6 +1,6 @@
 # 订阅阅读器测试
 
-##　技术架构
+## 技术架构
 
   jasmine.js
 
@@ -24,6 +24,7 @@
    基本完成测试要求
 
 ## 测试改进
+<<<<<<< HEAD:README .md
 1. `allFeeds` 的`url`和`name`测试的相同代码提出统一方法。
 2. 对`url`正则表达式验证。
 3. 确保菜单 (menu) 元素在默认情况下处于隐藏状态，使用`.hasClass` 函数判断是否含有`menu-hidden`。
@@ -31,3 +32,7 @@
 5. 简化代码，经分析，得之`cb() == done()`，所以简化为`loadFeed(0, done)`。
 6. `it`中没有异步请求，去除`done。`
 7. 获取了全局的`jasmine.DEFAULT_TIMEOUT_INTERVAL`，并在每个suite中设置了`jasmine.DEFAULT_TIMEOUT_INTERVAL`，在每个spec运行之后，恢复默认值。
+=======
+
+   异步测试，网络不好时，就会超时，不知道是否还有好的测试方法。
+>>>>>>> origin/master:README.md
